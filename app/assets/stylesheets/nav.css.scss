@@ -1,0 +1,185 @@
+.navbar {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color:#606163;
+  max-height: 50px;
+  font-size: 3vh;
+}
+
+.navbar-custom {
+  background-color:#606163;
+  position: relative;
+  min-height: 50px;
+  border: 1px solid transparent;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-height: 50px;
+  font-size: 3vh;
+}
+
+nav {
+  margin-top: 5px;
+  // overflow: hidden;
+
+}
+
+.actualnav {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  clear: both;
+  padding: 4px;
+  max-height: 4vh;
+  background-color:#606163;
+}
+
+.actualnav ul {
+  list-style-type: none;
+  color: black;
+  padding:0;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.actualnav li {
+  display: inline;
+  font-size: 2vh;
+  padding: 1%;
+}
+
+nav ul {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+nav img {
+  width: 25%;
+  max-width: 250px;
+  height: auto;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  height: inherit;
+
+}
+
+
+
+nav a {
+  color:white;
+}
+
+// nav h3 {
+//   display: inline-block;
+//   clear:both;
+//   // position: absolute;
+//   // bottom: 0;
+//   // right: 0;
+//   margin-right: 10px;
+//   font-size: 2vh;
+// }
+
+nav h3 {
+  // float: right;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vh;
+  clear:both;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+
+}
+
+
+
+.nav-contact {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+
+}
+
+.nav-center-info {
+  // text-align: center;
+  // align-items: center;
+  // justify-content: center;
+  font-size: 1.5vh;
+  // // clear:both;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+
+}
+
+#inner-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#nav-center {
+   display: table;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  // margin-left: auto;
+  // margin-right: auto;
+  margin: auto;
+  height: 100px;
+  width: 800px; /* Need a specific value to work */
+}
+
+#nav-login a {
+  color: blue;
+}
+
+#nav-login a:hover {
+  color: green;
+}
+
+#nav-center h3 {
+  font-size: 2.5vh;
+  font-style: italic;
+}
+
+#nav-login {
+  position: absolute;
+  right: .5px;
+  top: .5px;
+}
+
+
+// h3#or {
+//   text-align: center;
+//   align-items: center;
+//   justify-content: center;
+//   float: none;
+// }
+
+.mynav {
+  position:relative;
+
+}

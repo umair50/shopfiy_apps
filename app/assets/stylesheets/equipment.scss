@@ -1,0 +1,209 @@
+// Place all the styles related to the Equipment controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.static_img img, nav, .horizontal-equipment, footer, #vendor-images, .divider,  {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: auto;
+}
+
+// .static_img img {
+//   width: 80%
+// }
+
+// .static_img {
+//   content: "";
+//   background-image: url('transparent_stock_equipment');
+//   background-size: contain;
+//   width: 100%;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+
+
+// .horizontal-equipment {
+//   // padding: 3%;
+//   // overflow: auto;
+//   overflow: scroll;
+//   direction:ltr;
+//   // whi te-space: nowrap;
+//   -ms-overflow-style: -ms-autohiding-scrollbar;
+//   /* For WebKit implementations, provide inertia scrolling */
+//   -webkit-overflow-scrolling: touch;
+//   /* We don't want internal inline elements to wrap */
+//   white-space: nowrap;
+//   /* Remove the default scrollbar for WebKit implementations */
+//   &::-webkit-scrollbar {
+//       display: none;
+//   }
+// }
+
+.equipment-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  -webkit-overflow-scrolling: touch;
+  // margin-bottom: 2px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .images {
+    display: inline-block;
+    max-height: 150px;
+    max-width: 150px;
+    // padding: 14px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em
+  }
+}
+
+.images {
+  margin-bottom: 2px;
+}
+
+.images img {
+  max-width: inherit;
+  padding: 2%;
+}
+
+#vendor-images {
+  justify-content: center;
+  text-align: center;
+  // align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  // display: inline-flex;
+  // width: 100%;
+  // max-width: 1800px;
+  // margin: auto;
+  // padding: 2%;
+}
+
+// #vendor-images h2 {
+//   padding: 2%;
+//   border-top: 1px solid grey;
+// }
+
+#vendor-images p {
+  margin-top: 2%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  float: right;
+  font-size: 2vh;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.vendor-col {
+  justify-content: space-around;
+  align-items: center;
+  display: inline-flex;
+  max-width: 250px;
+  height: 2%
+}
+
+
+
+.vendor_row {
+  justify-content: center;
+  align-items: center;
+
+  // border: 1px solid purple;
+
+}
+
+
+#vendor-images img {
+  // width: 60%;
+  max-width: 200px;
+  height: auto;
+  // margin-right: 1.5%
+}
+
+#shop {
+  margin-top: 30px;;
+}
+
+.product_block{
+  width: 200px;
+  text-align: center;
+  border: 1px solid #000000b8;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-right: 12px;
+  margin-left: 12px;
+  display: inline-block;
+  float: left;
+}
+
+.product_name{
+  background-color: #bd0404;
+  color: white;
+  font-size: 14px;
+  height: 30px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.product_image{
+  padding-bottom: 8px;
+  padding-top: 8px;
+  max-width:100%;
+  max-height:100%;
+}
+
+.shop_content{
+  clear: both;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  padding-top: 4%;
+  font-weight: bold;
+  font-size: 1.6vh;
+}
+
+.all_products{
+  text-align: center;
+  width: 900px;
+  margin: auto;
+}
+
+.new_product{
+  color: black;
+  font-weight: bold;
+}
+
+.search_img{
+  height: 22px;
+  margin-left: 15px;
+}
+
+.search_bar{
+  margin-left: 145px;
+}
+
+.product_form{
+  margin-left: 50px;
+}
+
+.product_pic{
+  text-align: right;
+  padding-right: 30px !important;
+}
+
+.product_show{
+  margin-top: 40px;
+}
+
+.product_info{
+  padding-left: 40px;
+}

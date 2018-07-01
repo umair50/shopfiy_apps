@@ -1,0 +1,36 @@
+.footer-wrapper {
+  // margin: auto;
+  // background: silver;
+  width: 100%;
+  max-width: 800px;
+  bottom: 0;
+  background-color: #606163;
+  color: white;
+  position: absolute;
+  height: 100px;
+}
+
+.contact {
+  margin: 2%;
+}
+.contact, .title, .contact-info {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2vh;
+  margin-bottom: 0;
+}
+
+.contact-info {
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+
+footer p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

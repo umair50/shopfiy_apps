@@ -1,0 +1,31 @@
+<div class='product_show'>
+  <div class='product_pic col-md-6'>
+    <p>
+      <%= image_tag @equipment.picture.show.url %>
+    </p>
+  </div>
+
+  <div class='product_info col-md-4'>
+    <p style="font-size: 20px;">
+      <strong><%= @equipment.name.capitalize %></strong>
+    </p>
+
+    <p>
+      <%= @equipment.brief_description %>
+    </p>
+
+    <p>
+      <strong>Price:</strong>
+      <%= @equipment.price %>
+    </p>
+
+    <p>
+      <strong>Features:</strong>
+      <ul>
+        <% @equipment.features.split(",").each do |feature| %>
+          <li><%= feature %></li>
+        <% end %>
+      </ul>
+    </p>
+  </div>
+</div>

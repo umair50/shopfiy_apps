@@ -1,0 +1,49 @@
+<nav>
+	<div class="mynav">
+		<%= image_tag('logo.png') %>
+		<!-- <ul class="custom-nav nav nav-tabs">
+				<li class="dropdown pull-right">
+					 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Options<strong class="caret"></strong></a>
+					<ul class="dropdown-menu">
+						<li>hi
+						</li>
+					</ul>
+				</li>
+		</ul> -->
+	<div class='nav-contact'>
+		<h3 class="mynav_child"> Email or Text </h3>
+		<h3 class="mynav_child"> fitgymparts@gmail.com </h3>
+		<h3 class="mynav_child"> 415-238-1419 </h3>
+
+	</div>
+
+	<div id='nav-center'>
+		<div id='inner-center'>
+			<h3 class='nav-center-info'>New and Used </h3>
+			<h3 class='nav-center-info'>Equipment & Parts</h3>
+		</div>
+	</div>
+
+	<div id='nav-login'>
+		<p><%= link_to 'LOGIN', login_path %></p>
+		<!-- <p><%= link_to 'LOGOUT', logout_path %></p> -->
+	</div>
+
+	</div>
+		<div class='actualnav'>
+			<ul>
+				<li><%= link_to 'HOME', root_path %></li>
+				<li><%= link_to 'SHOP', equipments_path %></li>
+				<li><a href="#">ABOUT</a></li>
+			</ul>
+		</div>
+	<!-- <div class="navbar-custom">
+		<div class="navbar-inner">
+			<ul class="nav">
+				<li><%= link_to 'HOME', root_path %></li>
+				<li><%= link_to 'SHOP', equipments_path %></li>
+				<li><a href="#">ABOUT</a></li>
+			</ul>
+		</div>
+	</div> -->
+</nav>

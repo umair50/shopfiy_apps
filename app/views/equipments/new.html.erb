@@ -1,0 +1,35 @@
+<%- if user_signed_in? %>
+  <div class='product_form'>
+    <%= form_with scope: :equipment, url: equipments_path, local: true do |form| %>
+      <p>
+        <%= form.label :name %><br>
+        <%= form.text_field :name %>
+      </p>
+
+      <p>
+        <%= form.label :price %><br>
+        <%= form.text_field :price %>
+      </p>
+
+      <p>
+        <%= form.label :brief_description %><br>
+        <%= form.text_area :brief_description %>
+      </p>
+
+      <p>
+        <%= form.label :features %>
+        <span> (Note: Put each feature on a new line.)</span><br>
+        <%= form.text_area :features %>
+      </p>
+
+      <p>
+        <%= form.label :picture %><br>
+        <%= form.file_field :picture %>
+      </p>
+
+      <p>
+        <%= form.submit %>
+      </p>
+    <% end %>
+  </div>
+<% end %>

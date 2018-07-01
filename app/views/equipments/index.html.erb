@@ -1,0 +1,52 @@
+<div id='shop'>
+  <div class='search_bar'>
+    <%= form_tag(equipments_path, :method => "get", id: "search-form") do %>
+        <%= image_tag('search.png', :class => "search_img") %>
+        <%= text_field_tag(:search, params[:search], placeholder: "Search Products", :style=>'width:200px') %>
+    <% end %>
+  </div>
+
+  <div class='all_products'>
+    <%- if user_signed_in? %>
+      <div class='new_product'>
+        <%= link_to 'Add New', new_equipment_path %>
+      </div>
+    <% end %>
+    <% @equipments.each do |equipment| %>
+      <div class='product_block'>
+        <div class='product_name'>
+          <%= equipment.name %>
+        </div>
+        <div class='product_image'>
+          <%= image_tag equipment.picture.thumb.url %>
+        </div>
+        <div class='product_price'>
+          <%= equipment.price %>
+        </div>
+        <%- if user_signed_in? %>
+          <div>
+            <%= link_to 'Edit', edit_equipment_path(equipment) %>
+            |
+            <%= link_to 'Destroy', equipment_path(equipment),
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %></td>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <div class='shop_content'>
+    <div>
+      FREE CURBSIDE DELIVERY WITHIN 50 MI RADIUS OF PACHECO, CA
+    </div>
+    <div>
+      MOST MACHINES COME WITH A 90 DAY WARRANTY
+    </div>
+    <div>
+      CALL NOW TO ORDER!
+    </div>
+    <div>
+      925-766-1784
+    </div>
+  </div>
+</div>
