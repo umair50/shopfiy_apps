@@ -15,11 +15,8 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  resources :equipments do
-    collection  do
-     get 'index'      
-    end
-  end
+  resources :equipments
+
   
   resources :terms
 

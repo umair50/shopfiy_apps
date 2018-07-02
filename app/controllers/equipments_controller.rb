@@ -1,4 +1,4 @@
-class EquipmentsController< ShopifyApp::AuthenticatedController
+class EquipmentsController< ApplicationController
 
   def create
     @equipment = Equipment.new(equipment_params)
